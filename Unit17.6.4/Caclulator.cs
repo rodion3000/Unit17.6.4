@@ -8,12 +8,7 @@ namespace Unit17._6._4
 {
     public class Caclulator : CalculateInterestBank
     {
-        public void CalculateInterest(Account account)
-        {
-
-            Console.WriteLine($"расчет для процентной стави для аккаунтов{account.Name} равен {account.Interest}");
-          
-        }
+       
 
     }
 }

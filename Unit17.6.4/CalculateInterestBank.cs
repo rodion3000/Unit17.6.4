@@ -8,7 +8,7 @@ namespace Unit17._6._4
 {
     public interface CalculateInterestBank
     {
-        public static void CalculateInterest(Account account)
+        public void CalculateInterest(Account account)
         {
             if (account.Type == "Обычный")
             {
@@ -26,6 +26,7 @@ namespace Unit17._6._4
                 // расчет процентной ставк зарплатного аккаунта по правилам банка
                 account.Interest = account.Balance * 0.5;
             }
+            Console.WriteLine($"расчет процентной ставки для аккаунта {account.Name} равен {account.Interest}");
         }
 
     }

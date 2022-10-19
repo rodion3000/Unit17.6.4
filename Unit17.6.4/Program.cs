@@ -18,6 +18,11 @@ namespace Unit17._6._4
                 new Account("Алексей","Зарплатный",30000)
 
             };
+            CalculateInterestBank calc = new Caclulator();
+            foreach (var acc in acclist)
+            {
+                calc.CalculateInterest(acc);
+            }
             
             
            
